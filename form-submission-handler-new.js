@@ -91,6 +91,8 @@ function handleFormSubmit(event) {  // handles form submit without any jquery
         document.getElementById("contactname").value = "";
         document.getElementById("contactemail").value = "";
         document.getElementById("contactmessage").value = "";
+        var thankYouMessage = document.getElementById("thankyou_message");
+        thankYouMessage.style.display = 'inline-block';
         return;
     };
     // url encode form data for sending as post data
